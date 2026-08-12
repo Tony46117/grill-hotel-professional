@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact &amp; Reservations — Ember &amp; Oak Grill Hotel</title>
+  <meta name="description" content="Reserve a table, book a room or plan a private event at Ember &amp; Oak Grill Hotel, Nairobi." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,900;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>📍 14 Riverside Drive, Westlands, Nairobi</span>
+      <span>🕐 Open Daily 11:00 – 23:00</span>
+      <span class="topbar-contact">📞 +254 758 922 294</span>
+    </div>
+  </div>
+
+  <header class="nav" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">🔥</span>
+        <span class="brand-text">Ember <em>&amp;</em> Oak</span>
+        <small>GRILL HOTEL</small>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <a href="contact.html#reserve" class="btn btn-solid nav-cta">Reserve Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1800&q=80')">
+    <div class="page-hero-overlay"></div>
+    <div class="container page-hero-content">
+      <p class="eyebrow">Say Hello</p>
+      <h1>Contact &amp; Reservations</h1>
+      <nav class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Contact</span></nav>
+    </div>
+  </section>
+
+  <section class="section" id="reserve">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <p class="eyebrow">Get in Touch</p>
+        <h2>We'd love to host you</h2>
+        <p>For tables, rooms, events or anything else — our concierge team replies within the hour, every day.</p>
+        <div class="info-list">
+          <div class="info-row"><span>📍</span><div><strong>Address</strong><p>14 Riverside Drive, Westlands, Nairobi, Kenya</p></div></div>
+          <div class="info-row"><span>📞</span><div><strong>Phone / WhatsApp</strong><p>+254 758 922 294</p></div></div>
+          <div class="info-row"><span>✉️</span><div><strong>Email</strong><p>hello@emberandoak.co.ke</p></div></div>
+          <div class="info-row"><span>🕐</span><div><strong>Hours</strong><p>Restaurant 11:00 – 23:00 · Bar until 01:00</p></div></div>
+        </div>
+        <a class="btn btn-solid" href="https://wa.me/254758922294" target="_blank" rel="noopener">💬 Chat on WhatsApp</a>
+      </div>
+
+      <form class="reserve-form" id="contactForm">
+        <h3>Make a Reservation</h3>
+        <div class="field">
+          <label for="c-name">Full Name</label>
+          <input type="text" id="c-name" placeholder="Jane Doe" required />
+        </div>
+        <div class="field">
+          <label for="c-phone">Phone</label>
+          <input type="tel" id="c-phone" placeholder="+254 7XX XXX XXX" required />
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="c-date">Date</label>
+            <input type="date" id="c-date" required />
+          </div>
+          <div class="field">
+            <label for="c-time">Time</label>
+            <input type="time" id="c-time" required />
+          </div>
+        </div>
+        <div class="field">
+          <label for="c-type">Booking Type</label>
+          <select id="c-type">
+            <option>Dinner Table</option>
+            <option>Hotel Room</option>
+            <option>Private Event</option>
+            <option>Wine Tasting</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="c-message">Special Requests (optional)</label>
+          <textarea id="c-message" rows="3" placeholder="Allergies, celebrations, seating preferences..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-solid btn-block">Request Booking</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ====== MAP ====== -->
+  <section class="map-band">
+    <iframe
+      title="Ember & Oak location"
+      src="https://www.openstreetmap.org/export/embed.html?bbox=36.7974%2C-1.2690%2C36.8274%2C-1.2490&layer=mapnik&marker=-1.2590%2C36.8124"
+      loading="lazy"></iframe>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <a href="index.html" class="brand"><span class="brand-mark">🔥</span><span class="brand-text">Ember <em>&amp;</em> Oak</span></a>
+        <p>Grill House &amp; Steak Hotel. Fire cooking, honest hospitality, since 2008.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="X">X</a>
+          <a href="#" aria-label="TikTok">TT</a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="menu.html">Menus</a></li>
+          <li><a href="rooms.html">Rooms &amp; Suites</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li>14 Riverside Drive</li>
+          <li>Westlands, Nairobi</li>
+          <li>+254 758 922 294</li>
+          <li>hello@emberandoak.co.ke</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <ul>
+          <li>Restaurant · 11:00 – 23:00</li>
+          <li>Bar · 11:00 – 01:00</li>
+          <li>Check-in · from 14:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Ember &amp; Oak Grill Hotel. All rights reserved. <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
