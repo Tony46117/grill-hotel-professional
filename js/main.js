@@ -1,5 +1,5 @@
 /* ============================================
-   Ember & Oak — Professional Site JS
+   Mean Grill — Professional Site JS
    ============================================ */
 
 // Mobile menu
